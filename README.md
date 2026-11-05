@@ -121,3 +121,35 @@ Before you submit your solution, you need to save your progress with git.
 4. When you are ready to submit, click the ***Load Lab: Object Oriented Programming (OOP)- Part 2- Cash Register*** button in Canvas to launch CodeGrade.
   * Click on + Create Submission. Connect your repository for this lab.
   * For additional information on submitting assignments in CodeGrade: [Getting Started in Canvas](https://help.codegrade.com/for-students/getting-started/getting-started-in-canvas).
+
+  ## Completed Project
+
+Implemented a Python CashRegister class that supports:
+
+- Adding items with a price and optional quantity.
+- Tracking the total, item names, and previous transactions.
+- Applying a percentage discount to the total.
+- Validating that discounts are integers from 0 through 100.
+- Voiding the most recent purchase, including its full quantity.
+- Displaying messages when no discount or transaction is available.
+
+### Setup
+
+This project uses Python 3.13 and Pipenv.
+
+Install dependencies:
+
+pipenv install --dev
+
+Run the tests:
+
+pipenv run pytest --disable-warnings
+
+### Results
+
+All 14 supplied tests passed. Manual checks also confirmed that
+invalid discounts such as 150 and "ten" display "Not valid discount".
+
+### Screenshot
+
+![All 14 tests passing](screenshots/tests-passed.png)
